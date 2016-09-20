@@ -1,2 +1,2 @@
 # calvinmilliron.github.io
-This site is for learning HTML5, CSS3, and JavaScript for a web frontend development class.
+This is a list of sites for learning HTML5, CSS3, and JavaScript for several web development classes.
