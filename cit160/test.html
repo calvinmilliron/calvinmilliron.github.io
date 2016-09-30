@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page | calvinmilliron.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    
+    
+    
+    <style>
+      .switch-field {
+        font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+        padding: 40px;
+        overflow: hidden;
+      }
+
+      .switch-title {
+        margin-bottom: 6px;
+      }
+
+      .switch-field input {
+        display: none;
+      }
+
+      .switch-field label {
+        float: left;
+      }
+      
+    
+     
+
+      .switch-field label:hover {
+        cursor: pointer;
+      }
+
+      .switch-field input:checked + label:first-of-type {
+        background-color: #A5DC86;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+      .switch-field input:checked + label:last-of-type {
+        background-color: #dc8693;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+
+      .switch-field label:first-of-type {
+        border-radius: 4px 0 0 4px;
+      }
+
+      .switch-field label:last-of-type {
+        border-radius: 0 4px 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>calvinmilliron.github.io</h1>
+    </header>
+    <main>
+      <h1>Questions</h1>
+      <form class="form">
+        <section class="switch-field">
+          <section class="switch-title">Are you worthy??</section>
+          <input type="radio" id="switch_left" name="switch_2" class="switchYes" value="yes" checked/>
+          <label for="switch_left">Yes</label>
+          <input type="radio" id="switch_right" name="switch_2" class="switchNo" value="no" />
+          <label for="switch_right">No</label>
+        </section>
+
+        
+        </form>
+    </main>
+    <footer>
+      <small>Last Updateed: Sept 19, 2016</small>
+    </footer>
+  </body>
+</html>
