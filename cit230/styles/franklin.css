@@ -1,0 +1,31 @@
+body{
+  background-color: #2353d8;
+  text-shadow: 2px 2px 5px #f9fdff;
+}
+nav.cities{
+  background-color: #72b0f8;
+  border-radius: 5px;
+}
+.cities img{
+  width: 32.33%;
+  margin-bottom: -4px;
+}
+#selectedCity{
+  background-color: #2353d8;
+  
+}
+h1{
+  float: left;
+  width: 50%;
+  font-size: 60px;
+}
+h1 sup{
+  font-size: 30px;
+}
+#curve_chart{
+  /*width: 100px;*/
+}
+#highLow{
+  float: left;
+  
+}

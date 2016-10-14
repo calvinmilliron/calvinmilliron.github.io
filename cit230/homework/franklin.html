@@ -5,34 +5,32 @@
     <title>Home Page | calvinmilliron.github.io</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" media="screen" type="text/css" href="/cit230/styles/franklin.css">
-    <script src="/cit230/scripts/weather.json"></script>
+    <link rel="stylesheet" media="screen" type="text/css" href="../../cit230/styles/franklin.css">
+    <!--<script src="../../cit230/scripts/weather.json"></script>-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../../cit230/scripts/franklin.js"></script>
   </head>
   <body>
-<header>
-  <nav>
-    <img alt="Select Franklin Idaho" src="/cit230/images/franklin.png">
-    <img alt="Select Greenville South Carolina" src="/cit230/images/greenville.png">
-    <img alt="Select Springfield Illinois" src="/cit230/images/springfield.png">
-  </nav>
-</header>
-      <main>
-        <h1>Home Page</h1>
-        <h2 class="subHeading">Homework</h2>
-        <ul>
-          <li><a href="homework/visitor-analysis.html" title="View Mobile Site Visitor Analysis">Mobile Site Visitor Analysis</a></li>
-          <li><a href="homework/design-principles.html" title="View Design Principles Assessment">Design Principles Assessment</a></li>
-          <li><a href="homework/initial-plan.html" title="View Initial Planning Document">Inital Planning Document</a></li>
-        </ul>
-        <h2 class="subHeading">Classwork</h2>
-        <ul>
-          <li><a href="classwork/practice.html" title="Practice page with SUX image">Practice SUX</a></li>
-        </ul>
-        <p id="description">This is a temporary home page served from a GitHub repository.</p>
-      </main>
-      <footer>
-        <small>Last Updateed: OCt 9, 2016</small>
-      </footer>
-    </div>
+    <header>
+      <nav class="cities">
+        <img id="selectedCity" alt="Select Franklin Idaho" src="../../cit230/images/franklin.png">
+        <img alt="Select Greenville South Carolina" src="../../cit230/images/greenville.png">
+        <img alt="Select Springfield Illinois" src="../../cit230/images/springfield.png">
+      </nav>
+    </header>
+    <main>
+      <h1><center>68&deg;<sup>F</sup></center></h1>
+      <section><center><img alt="Weather Summary" src="../../cit230/images/day.png"></center></section>
+      <section id="highLow">
+        <p>High 90&deg;<sup>F</sup></p>
+        <p>Low 66&deg;<sup>F</sup></p>
+      </section>
+      <section>
+        <p>1 - 5 mph</p>
+        <p>SW</p>
+        <p>0% chance of Rain</p>
+      </section>
+      <div id="curve_chart"></div>
+    </main>
   </body>
 </html>
