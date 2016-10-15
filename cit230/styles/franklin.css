@@ -53,18 +53,18 @@ nav.cities{
   display: block;
   float: left;
   font-size: 60px;
-  width: 50%;
+  width: 49.5%;
   text-shadow: 2px 2px 5px #f9fdff;
 }
 #currentSummary img{
   float: right;
-  width: 50%;
+  width: 49.5%;
 }
 #currentSummary sup{
   font-size: 30px;
 }
 #highLow, #windSpeed, #summary{
-  width: 50%;
+  width: 49.5%;
   text-align: center;
 }
 #highLow{
