@@ -34,13 +34,7 @@ function drawChart() {
     hAxis: { slantedText: false },
     chartArea: { width: '80%', height: '75%'},
     curveType: 'function',
-    legend: { position: 'bottom' },
-    annotations: {
-      boxStyle: {
-        rx: 10,
-        ry: 10,
-      }
-    }
+    legend: { position: 'bottom' }
   };
 
   var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
