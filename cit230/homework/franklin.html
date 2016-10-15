@@ -2,32 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home Page | calvinmilliron.github.io</title>
+    <title>Franklin, ID Weather</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" media="screen" type="text/css" href="../../cit230/styles/franklin.css">
-    <!--<script src="../../cit230/scripts/weather.json"></script>-->
+    <!--<script type="text/javascript" src="../../cit230/scripts/weather.json"></script>-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="../../cit230/scripts/franklin.js"></script>
   </head>
   <body>
     <header>
+      <ul class="cityTemps">
+        <li class="first">84&deg;</li>
+        <li class="middle">77&deg;</li>
+        <li class="last">62&deg;</li>
+      </ul>
       <nav class="cities">
         <img id="selectedCity" alt="Select Franklin Idaho" src="../../cit230/images/franklin.png">
         <img alt="Select Greenville South Carolina" src="../../cit230/images/greenville.png">
         <img alt="Select Springfield Illinois" src="../../cit230/images/springfield.png">
       </nav>
+      <ul class="cityNames">
+        <li class="first">Franklin</li>
+        <li class="middle">Greenville</li>
+        <li class="last">Springfield</li>
+      </ul>
+
     </header>
     <main>
-      <h1><center>68&deg;<sup>F</sup></center></h1>
-      <section><center><img alt="Weather Summary" src="../../cit230/images/day.png"></center></section>
-      <section id="highLow">
-        <p>High 90&deg;<sup>F</sup></p>
-        <p>Low 66&deg;<sup>F</sup></p>
+      <section id="currentSummary">
+        <h1 id="currentTemp">84&deg;<sup>F</sup></h1>
+        <img alt="Weather Summary" src="../../cit230/images/day.png">
       </section>
-      <section>
-        <p>1 - 5 mph</p>
-        <p>SW</p>
+      <section id="highLow" class="first">
+        <p>High 90&deg;</p>
+        <p>Low 66&deg;</p>
+      </section>
+      <section id="windSpeed" class="last">
+        <p>1 - 5 mph SW</p>
         <p>0% chance of Rain</p>
       </section>
       <div id="curve_chart"></div>

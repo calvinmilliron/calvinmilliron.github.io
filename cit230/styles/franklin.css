@@ -1,9 +1,29 @@
 body{
   background-color: #2353d8;
-  text-shadow: 2px 2px 5px #f9fdff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.cityTemps{
+  position: absolute;
+}
+.cityTemps li{
+  text-align: right !important;
+  position: relative;
+  right: 20px;
+  top: 10px;
+}
+.first{
+  background-color: rgba(255, 255, 255, 0.44);
+  border-radius: 5px 0px 0px 5px;
+}
+.last{
+  background-color: rgba(255, 255, 255, 0.44);
+  border-radius: 0px 5px 5px 0px;
+}
+.middle{
+  background-color: rgba(255, 255, 255, 0.44);
 }
 nav.cities{
-  background-color: #72b0f8;
+  background-color: rgba(0, 0, 0, 0.44);
   border-radius: 5px;
 }
 .cities img{
@@ -12,20 +32,51 @@ nav.cities{
 }
 #selectedCity{
   background-color: #2353d8;
-  
 }
-h1{
+.cityNames, .cityTemps{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.cityNames li, .cityTemps li{
+  display: block;
   float: left;
-  width: 50%;
-  font-size: 60px;
+  width: 33%;
+  text-align: center;
 }
-h1 sup{
+#currentSummary{
+  text-align: center;
+  /*vertical-align: middle;*/
+}
+#currentTemp{
+  display: block;
+  float: left;
+  font-size: 60px;
+  width: 50%;
+  text-shadow: 2px 2px 5px #f9fdff;
+}
+#currentSummary img{
+  float: right;
+  width: 50%;
+}
+#currentSummary sup{
   font-size: 30px;
 }
-#curve_chart{
-  /*width: 100px;*/
+#highLow, #windSpeed, #summary{
+  width: 50%;
+  text-align: center;
 }
 #highLow{
   float: left;
-  
+  margin-top: 8px;
 }
+#windSpeed{
+  float: right;
+}
+#curve_chart{
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
