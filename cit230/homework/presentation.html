@@ -2,26 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home Page | calvinmilliron.github.io</title>
+    <title>CSS Implementation | calvinmilliron.github.io</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="screen" type="text/css" href="/cit230/styles/presentation.css">
+    <!--Internal and Inline stylings are used to represent CSS Implementation options-->
     <style>
-      h1{
+      h1, h2, #subTitle{
+        text-align: center;
+      }
+      #subTitle{
+        position: relative;
+        bottom: 15px;
+      }
+      #example h1{
         font-family: "Lucida Grande", sans-serif;
         color: #c7505a;
+        text-align: left;
       }
-      .subHeading{
-        background-color: #a2ffd1;
-        border-radius: 5px;
-        width: 120px;
-        padding-left: 5px;
-      }
-      .subHeading:hover{
-        transition-duration: 500ms;
-        box-shadow: 5px 5px 5px #888888;
-        cursor: pointer;
-      }
-      #description{
+      #example #description{
         background-color: black;
         color: #a2ffd1;
         width: 420px;
@@ -30,31 +29,134 @@
     </style>
   </head>
   <body>
-    <img style="float:left; padding-top:20px; box-shadow: 5px 5px 5px #888888" src="/cit230/images/css-code.png">
-    <div id="wrapper" style="float:left; padding-left: 20px;">
-      <!--
-<header>
-<h1>calvinmilliron.github.io</h1>
-<img alt="The site logo for calvinmilliron.github.io" src="#">
-</header>
--->
-      <main>
+    <header>
+      <a style="position: absolute;" href="/cit230/index.html">Home</a>
+      <h1>CSS Implementation</h1>
+      <p id="subTitle">External &middot; Internal &middot; Inline</p>
+    </header>
+    <main>
+      <h2>CSS - Cascading Style Sheet</h2>
+      <hr>
+      <ul>
+        <li>Using Properties and Values to change how HTML elements look
+        </li>
+        <li>CSS selectors use Braces like JavaScript
+        </li>
+        <li>Properties and Values are separated by a colons
+        </li>
+        <li>Declarations are closed with semicolons<br>
+          <span style="margin-left: 1em;">selector{</span><br>
+          <span style="margin-left: 2em;">(Declaration)</span><br>
+          <span style="margin-left: 2em;">Property: Value;</span><br>
+          <span style="margin-left: 1em;">}
+          </span></li>
+      </ul>
+      <img style="float:left; padding-top:20px; box-shadow: 5px 5px 5px #888888;" src="/cit230/images/css-code.png">
+      <div id="example" style="float:left; padding-left: 20px; margin-bottom: 2em; box-shadow: 5px 5px 5px #888888;">
         <h1>Home Page</h1>
         <h2 class="subHeading">Homework</h2>
         <ul>
-          <li><a href="homework/visitor-analysis.html" title="View Mobile Site Visitor Analysis">Mobile Site Visitor Analysis</a></li>
-          <li><a href="homework/design-principles.html" title="View Design Principles Assessment">Design Principles Assessment</a></li>
-          <li><a href="homework/initial-plan.html" title="View Initial Planning Document">Inital Planning Document</a></li>
+          <li><a href="/cit230/homework/visitor-analysis.html" title="View Mobile Site Visitor Analysis">Mobile Site Visitor Analysis</a></li>
+          <li><a href="/cit230/homework/design-principles.html" title="View Design Principles Assessment">Design Principles Assessment</a></li>
+          <li><a href="/cit230/homework/initial-plan.html" title="View Initial Planning Document">Inital Planning Document</a></li>
         </ul>
         <h2 class="subHeading">Classwork</h2>
         <ul>
-          <li><a href="classwork/practice.html" title="Practice page with SUX image">Practice SUX</a></li>
+          <li><a href="/cit230/classwork/practice.html" title="Practice page with SUX image">Practice SUX</a></li>
         </ul>
         <p id="description">This is a temporary home page served from a GitHub repository.</p>
-      </main>
-      <footer>
-        <small>Last Updateed: OCt 9, 2016</small>
-      </footer>
-    </div>
+        <footer>
+          <small>Last Updateed: OCt 9, 2016</small>
+        </footer>
+      </div>
+      <h2 style="clear: left;">External</h2>
+      <hr>
+      <ul>
+        <li>Requires a separate file
+        </li>
+        <li>File must be .css extension
+        </li>
+        <li>File must be accessible from document
+        </li>
+        <li>File must be linked to in document
+        </li>
+      </ul>
+      <img alt="Image of External Link" src="/cit230/images/link-highlighted.png">
+      <img alt="Image of Directory" src="/cit230/images/dir-highlighted.png">
+      <h2>Internal</h2>
+      <hr>
+      <ul>
+        <li>Must be within style tag
+          <ul>
+            <li>&lt;style&gt;…&lt;/style&gt;</li>
+          </ul>
+        </li>
+        <li>Style tag must be within head tag
+          <ul>
+            <li>&lt;head&gt;…&lt;/head&gt;</li>
+          </ul>
+        </li>
+      </ul>
+      <img alt="Image of Internal Code" src="/cit230/images/internal-head.png">
+      <h2>Inline</h2>
+      <hr>
+      <ul>
+        <li>Requires style attribute
+          <ul>
+            <li>style=“…”</li>
+          </ul>
+        </li>
+        <li>Style attribute must be in opening tag
+          <ul>
+            <li>&lt;tag style=“…”&gt;…&lt;/tag&gt;</li>
+          </ul>
+        </li>
+        <li>Desired tag must be in body tag
+          <ul>
+            &lt;body&gt;…&lt;tag>…&lt;/tag&gt;…&lt;/body&gt;
+          </ul>
+        </li>
+        <li>All CSS code must be within quotes</li>
+      </ul>
+      <div id="inlineExample">
+        <p>You can try formatting it</p>
+        <img alt="Image of Inline Formatting" src="/cit230/images/inline-formatted.png">
+        <p>But web servers only see it as…</p>
+        <img alt="Image of Inline Run on" src="/cit230/images/inline-runon.png">
+        <p>…a run on sentence</p>
+      </div>
+      <h2>Rules</h2>
+      <hr>
+      <ul>
+        <li>Never use Inline if another element needs to be styled in that way</li>
+        <li>Never use Internal if an element on another page needs to be styled in that way</li>
+        <li>External Style Sheet must be a .css file</li>
+      </ul>
+      <h2>Recommendations</h2>
+      <hr>
+      <ul>
+        <li>Use External Style Sheets most of the time</li>
+        <li>Only use Internal Style Sheets if it will save unnecessary bandwidth</li>
+        <li>Avoid confusion and clutter by avoiding Inline Style Attributes</li>
+        <li>Stay organized by separating code by placing JavaScript files, Style Sheets, and Images in their own directories</li>
+      </ul>
+      <h2>Sources</h2>
+      <hr>
+      <ul>
+        <li>CSS Syntax
+          <ul>
+            <li><a target="_blank" href="http://www.w3schools.com/css/css_syntax.asp">http://www.w3schools.com/css/css_syntax.asp</a></li>
+          </ul>
+        </li>
+        <li>CSS Implementation
+          <ul>
+            <li><a target="_blank" href="http://www.w3schools.com/css/css_howto.asp">http://www.w3schools.com/css/css_howto.asp</a></li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <small>Last Updated Oct 22, 2016</small>
+    </footer>
   </body>
 </html>

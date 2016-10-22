@@ -1,21 +1,15 @@
-h1{
-  font-family: "Lucida Grande", sans-serif;
-  color: #c7505a;
-}
-.subHeading{
+#example .subHeading{
   background-color: #a2ffd1;
   border-radius: 5px;
   width: 120px;
   padding-left: 5px;
+  text-align: left;
 }
-.subHeading:hover{
+#example .subHeading:hover{
   transition-duration: 500ms;
   box-shadow: 5px 5px 5px #888888;
   cursor: pointer;
 }
-#description{
-  background-color: black;
-  color: #a2ffd1;
-  width: 420px;
-  padding-left: 3px;
+#inlineExample{
+  margin-left: 5em;
 }
