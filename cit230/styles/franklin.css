@@ -1,37 +1,21 @@
 body{
-  background-color: #2353d8;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
-.cityTemps{
-  position: absolute;
+main{
+  clear: both;
+  padding-top: 1em;
 }
-.cityTemps li{
-  text-align: right !important;
-  position: relative;
-  right: 20px;
-  top: 10px;
-}
-.first{
+.highlight{
   background-color: rgba(255, 255, 255, 0.44);
-  border-radius: 5px 0px 0px 5px;
-}
-.last{
-  background-color: rgba(255, 255, 255, 0.44);
-  border-radius: 0px 5px 5px 0px;
-}
-.middle{
-  background-color: rgba(255, 255, 255, 0.44);
-}
-nav.cities{
-  background-color: rgba(0, 0, 0, 0.44);
   border-radius: 5px;
+  padding: 0px 5px;
 }
 .cities img{
-  width: 32.33%;
-  margin-bottom: -4px;
+  width: 32%;
 }
 #selectedCity{
-  background-color: #2353d8;
+  background-color: rgba(168, 168, 168, 0.74);
+  border-radius: 5px;
 }
 .cityNames, .cityTemps{
   list-style-type: none;
@@ -42,51 +26,153 @@ nav.cities{
 .cityNames li, .cityTemps li{
   display: block;
   float: left;
-  width: 33%;
+  width: 32%;
   text-align: center;
 }
-#currentSummary{
-  float: left;
-  width: 100%;
-  text-align: center;
-  /*vertical-align: middle;*/
+.cityTemps{
+  position: absolute;
+  right: .2em;
 }
-#currentTemp{
+.cityTemps li{
+  text-align: right !important;
+  margin-top: 5px;
+}
+.summary{
   display: block;
+  font-size: 3em;
+  text-align: center;
+  width: 49%;
   float: left;
-  font-size: 60px;
-  width: 50%;
-  text-shadow: 2px 2px 5px #f9fdff;
 }
-#currentSummary img{
-  float: right;
-  width: 50%;
+.summary div{
+  margin: .8em 0px;
 }
-#currentSummary sup{
-  font-size: 30px;
+.summary sup{
+  font-size: .5em;
 }
-#highLow, #windSpeed, #summary{
-  width: 50%;
+.detail{
+  float: left;
+  width: 49%;
   text-align: center;
 }
-.detailContainer{
-  float: left;
+#wireframeSmall{
+  clear: both;
+  padding: 1em 0px;
   width: 100%;
 }
-#highLow{
-  float: left;
-}
-#windSpeed{
-  float: right;
-}
-#curve_chart{
-  margin-top: 10px;
-  float: left;
-  width: 100%;
-}
-#wireframe{
-  float: left;
-  margin-top: 10px;
-  width: 100%;
+li.nation, img.nation, .recommendation, .hourly, .headerPad, .largeCityNames, .recommendationPad, .news, .newsPad, #wireframeMed, #wireframeLarge{
+  display: none;
 }
 
+
+@media screen and (min-width: 600px){
+  body{
+    font-size: 175%;
+  }
+  #wireframeSmall{
+    display: none;
+  }
+  #wireframeMed{
+    display: block;
+    clear: both;
+    padding: 1em 0px;
+    width: 100%;
+  }
+  li.nation, img.nation{
+    display: block;
+  }
+  .cities img, .cityNames li, .cityTemps li{
+    float: left;
+    width: 24.5%;
+  }
+  .summary, .detail{
+    display: block;
+    float: left;
+    width: 24.5%;
+  }
+  .summary div{
+    margin: .2em 0px;
+  }
+  .recommendation{
+    display: block;
+    float: left;
+    width: 48%;
+    margin: 0px .2em;
+  }
+  .recommendation h2{
+    font-size: 1em;
+    text-align: center;
+  }
+  main{
+    padding-top: 1em;
+  }
+  .hourly{
+    display: block;
+    width: 32%;
+    float: left;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  header, #wireframeMed{
+    display: none;
+  }
+  #wireframeLarge{
+    display: block;
+    clear: both;
+    padding: 1em 0px;
+    width: 100%;
+  }
+  .summary, .detail, .headerPad{
+    display: block;
+    float: left;
+    width: 20%;
+  }
+  .headerPad{
+    width: 10%;
+  }
+  .largeCityNames{
+    display: block;
+    clear: both;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .largeCityNames li{
+    display: block;
+    float: left;
+    width: 19%;
+    text-align: center;
+  }
+  #selectedCity{
+    padding: 5px;
+  }
+  #news{
+    clear: both;
+  }
+  .newsPad{
+    display: block;
+    width: 8%;
+    float: left;
+  }
+  .news{
+    display: block;
+    float: left;
+    width: 80%;
+  }
+  .news h2{
+    font-size: 1em;
+    text-align: center;
+  }
+  .recommendation{
+    width: 40%;
+    padding: 2em 0px;
+  }
+  .recommendationPad{
+    float: left;
+    display: block;
+    width: 8%;
+  }
+}
