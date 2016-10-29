@@ -12,7 +12,7 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/*
 @media screen and (min-width: 600px){
   header{
     text-align: center;
@@ -37,4 +37,15 @@ body{
   footer{
     clear: left;
   }
+}*/
+#wrapper{
+  display: flex;
+  flex-direction: column;
 }
+header{
+  text-align: center;
+}
+#center{ display: flex; }
+nav{ width: 20%; }
+main{ width: 50%; }
+aside{ width: 30%; }

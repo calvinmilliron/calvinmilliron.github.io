@@ -16,10 +16,10 @@
         <li><span class="highlight">62&deg;</span></li>
       </ul>
       <nav class="cities">
-        <img class="nation" alt="United States" src="/cit230/images/usa.png">
-        <img id="selectedCity" alt="Select Franklin Idaho" src="/cit230/images/franklin.png">
-        <img alt="Select Greenville South Carolina" src="/cit230/images/greenville.png">
-        <img alt="Select Springfield Illinois" src="/cit230/images/springfield.png">
+        <div class="nation"><img alt="United States" src="/cit230/images/usa.png"></div>
+        <div><img class="selectedCity" alt="Select Franklin Idaho" src="/cit230/images/franklin.png"></div>
+        <div><img alt="Select Greenville South Carolina" src="/cit230/images/greenville.png"></div>
+        <div><img alt="Select Springfield Illinois" src="/cit230/images/springfield.png"></div>
       </nav>
       <ul class="cityNames">
         <li class="nation">&nbsp;</li>
@@ -29,46 +29,37 @@
       </ul>
     </header>
     <main>
-      <section class="headerPad">&nbsp;</section>
       <section class="summary">
         <div>84&deg;<sup>F</sup></div>
-      </section>
-      <section class="summary">
-        <img alt="Weather Summary" src="/cit230/images/day.png">
+        <div><img alt="Weather Summary" src="/cit230/images/day.png"></div>
       </section>
       <section class="detail">
-        <p>High 90&deg;</p>
-        <p>Low 66&deg;</p>
+        <div>High 90&deg;<br>Low 66&deg;</div>
+        <div>1 - 5 mph SW<br>0% Rain</div>
       </section>
-      <section class="detail">
-        <p>1 - 5 mph SW</p>
-        <p>0% Rain</p>
-      </section>
-      <section class="headerPad">&nbsp;</section>
       <ul class="largeCityNames">
         <li>&nbsp;</li>
-        <li><span id="selectedCity">Franklin</span></li>
+        <li><span class="selectedCity">Franklin</span></li>
         <li>Greenville</li>
         <li>Springfield</li>
         <li>&nbsp;</li>
       </ul>
-      <section class="recommendation, recommendationPad">&nbsp;</section>
       <section class="recommendation">
-        <h2>Clothing</h2>
-        <p>It could get at hot as 90&deg; so you try to wear light clothing today and stay hydrayted.</p>
+        <div>
+          <h2>Clothing</h2>
+          <p>It could get at hot as 90&deg; so you try to wear light clothing today and stay hydrayted.</p>
+        </div>
       </section>
       <section class="recommendation">
-        <h2>Travel</h2>
-        <p>It will be sunny today, so try to use a windsheild visor to prevent the inside of your car becoming too hot.</p>
+        <div>
+          <h2>Travel</h2>
+          <p>It will be sunny today, so try to use a windsheild visor to prevent the inside of your car becoming too hot.</p>
+        </div>
       </section>
-      <section class="recommendation, recommendationPad">&nbsp;</section>
-      <section id="news">
-      <section class="newsPad">&nbsp;</section>
       <section class="news">
         <h2>News</h2>
         <p>The heat has caused a fatality due to heat exhaustion brought on by not drinking any water in this hot weather.</p>
         <p>Stay safe around swimming pools. There have been 2 fatalities of children playing in pools unsupervised.</p>
-      </section>
       </section>
       <section class="hourly">
         <h2>Morning</h2>
@@ -103,12 +94,12 @@
         2am  - 69&deg;<br>
         3am  - 69&deg;
       </section>
-      <img id="wireframeSmall" alt="Updated Wireframe" src="/cit230/images/wireframe-small-3.jpg">
-      <img id="wireframeMed" alt="Updated Wireframe" src="/cit230/images/wireframe-medium-3.jpg">
-      <img id="wireframeLarge" alt="Updated Wireframe" src="/cit230/images/wireframe-large-3.jpg">
     </main>
     <footer>
-      <small>Last Updated Oct 22, 2016</small>
+      <img id="wireFrameSmall" class="wireframe" alt="Updated Wireframe" src="/cit230/images/wireframe-small-3.jpg">
+      <img id="wireFrameMed" class="wireframe" alt="Updated Wireframe" src="/cit230/images/wireframe-medium-3.jpg">
+      <img id="wireFrameLarge" class="wireframe" alt="Updated Wireframe" src="/cit230/images/wireframe-large-3.jpg">
+      <small>Last Updated Oct 29, 2016</small>
     </footer>
   </body>
 </html>
