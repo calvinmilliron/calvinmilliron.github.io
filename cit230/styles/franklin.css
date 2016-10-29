@@ -1,4 +1,8 @@
 body{ font-family: 'Helvetica', 'Arial', sans-serif; }
+a{ text-decoration: none; }
+a:visited{ color: black;}
+a img{ transition: all .5s ease; }
+a:hover img{ box-shadow: inset 0px 0px 10px #4a4a4a; }
 ul{
   padding: 0;
   margin: 0;
@@ -32,7 +36,10 @@ ul{
   border-radius: 5px;
 }
 .cities{ display: flex; }
-.cities img{ width: 100%; }
+.cities img{
+  width: 100%;
+  border-radius: 5px;
+}
 .wireframe{ width: 100%; }
 .summary, .detail{
   display: flex;
@@ -88,10 +95,14 @@ ul{
   .largeCityNames li{
     width: 20%;
     text-align: center;
+    border-radius: 5px;
+    transition: all .5s ease;
   }
   .news{ width: 100%;}
   body{ padding: 0 10%}
   .summary, .detail{ width: 40%; }
   .detail div{ font-size: 2.2vw;}
   .summary div{ font-size: 8vw;}
+  .selectedCity{ padding: 0px 5px; }
+  .largeCityNames .linked:hover{ box-shadow: inset 0px 0px 10px #4a4a4a; }
 }
