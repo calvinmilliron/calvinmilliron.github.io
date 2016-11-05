@@ -1,0 +1,10 @@
+<ul class="largeCityNames">
+  <li>&nbsp;</li>
+  <li class="linked"><a href="franklin.html"><span id="franklinLink">Franklin</span></a></li>
+  <li class="linked"><a href="greenville.html"><span id="greenvilleLink">Greenville</span></a></li>
+  <li>Springfield</li>
+  <li>&nbsp;</li>
+</ul>
+<script>
+  document.getElementById(location.pathname.substring(location.pathname.lastIndexOf('/')+1).slice(0,-5)+"Link").className="selectedCity";
+</script>

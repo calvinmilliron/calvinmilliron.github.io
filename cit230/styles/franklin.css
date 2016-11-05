@@ -85,6 +85,7 @@ ul{
 @media screen and (min-width: 900px){
   #wireFrameMed, header{ display: none; }
   #wireFrameLarge, .news{ display: block; }
+  #page-nav{ width: 100%; }
   .largeCityNames{
     display: flex;
     width: 100%;
