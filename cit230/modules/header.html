@@ -1,0 +1,21 @@
+<ul class="cityTemps">
+  <li class="nation"></li>
+  <li><span class="highlight">84&deg;</span></li>
+  <li><span class="highlight">77&deg;</span></li>
+  <li><span class="highlight">62&deg;</span></li>
+</ul>
+<nav class="cities">
+  <div class="nation"><img alt="United States" src="/cit230/images/usa.png"></div>
+  <div><a href="franklin.html"><img id="franklinImage" alt="Select Franklin Idaho" src=/cit230/images/franklin.png></a></div>
+  <div><a href="greenville.html"><img id="greenvilleImage" alt="Greenville South Carolina" src="/cit230/images/greenville.png"></a></div>
+  <div><img alt="Select Springfield Illinois" src="/cit230/images/springfield.png"></div>
+</nav>
+<ul class="cityNames">
+  <li class="nation">&nbsp;</li>
+  <li><a href="franklin.html"><span class="highlight">Franklin</span></a></li>
+  <li><a href="greenville.html"><span class="highlight">Greenville</span></a></li>
+  <li><span class="highlight">Springfield</span></li>
+</ul>
+<script>
+  document.getElementById(location.pathname.substring(location.pathname.lastIndexOf('/')+1).slice(0,-5)+"Image").className="selectedCity";
+</script>
