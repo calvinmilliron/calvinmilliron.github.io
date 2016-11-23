@@ -1,5 +1,5 @@
 $(function() {
-  $("#page-header").load("/cit230/modules/header.html");
-  $("#page-nav").load("/cit230/modules/nav.html");
-  $("#page-footer").load("/cit230/modules/footer.html");
+  $("#page-header").load("/cit230/homework/modules/header.html");
+  $("#page-nav").load("/cit230/homework/modules/nav.html");
+  $("#page-footer").load("/cit230/homework/modules/footer.html");
 });
