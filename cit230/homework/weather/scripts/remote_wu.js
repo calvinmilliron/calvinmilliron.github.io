@@ -30,6 +30,7 @@ $(function () {
   
   //A function to display source data
   function useData(data){
+    console.log(data);
     //$("#cityDisplay").html(data['location']['city']+", "+data['location']['state']);
     document.title = data['location']['city']+", "+data['location']['state']+" | "+document.title;
     $("#currentTemp").html(Math.round(data['current_observation']['temp_f'])+$("#currentTemp").html());
@@ -39,6 +40,7 @@ $(function () {
     $("#windDir").html(data['current_observation']["wind_dir"]);
     $("#rainInch").html( Math.round(data['current_observation']["precip_today_in"]));
     $("#celsius").html(data['current_observation']["temp_c"]);
+    $("#summaryDescription").html(toTitleCase(data['current_observation']['weather']))
     if (data['current_observation']['temp_f'] > 80){
       $("#clothingRecommend").html("It could get hot, so you try to wear light clothing today and stay hydrayted.");
     } else if (data['current_observation']['temp_f'] > 60){
