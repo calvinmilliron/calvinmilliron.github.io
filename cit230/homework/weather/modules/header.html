@@ -17,5 +17,7 @@
   <li><span class="highlight">Springfield</span></li>
 </ul>
 <script>
+  if(document.getElementById(location.pathname.substring(location.pathname.lastIndexOf('/')+1).slice(0,-5)+"Image")){
   document.getElementById(location.pathname.substring(location.pathname.lastIndexOf('/')+1).slice(0,-5)+"Image").className="selectedCity";
+  }
 </script>

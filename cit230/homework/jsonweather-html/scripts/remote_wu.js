@@ -33,7 +33,7 @@ $(function () {
     $("#cityDisplay").html(data['location']['city']+", "+data['location']['state']);
     document.title = data['location']['city']+", "+data['location']['state']+" | "+document.title;
     $("#currentTemp").html(Math.round(data['current_observation']['temp_f'])+"&deg;F");
-    $("#summary").html(data['current_observation']['weather'])
+    $("#summary").html(toTitleCase(data['current_observation']['weather']))
     $("#add1").html(data['current_observation']['relative_humidity']+" Humidity")
     $("#add2").html(Math.round(data['current_observation']['wind_mph'])+"mph Winds")
     $("#add3").html("Wind Direction - "+data['current_observation']['wind_dir'])
