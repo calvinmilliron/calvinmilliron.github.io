@@ -18,14 +18,15 @@ API = 64ffccdad5d42b2b
     <link rel="stylesheet" media="screen" type="text/css" href="/cit230/homework/weather/styles/franklin.css">
   </head>
   <body>
+    <div id="searchLink"><a href="search.html">Search</a></div>
     <header id="page-header"></header>
     <main>
       <section class="summary">
-        <div id="currentTemp">&deg;<sup>F</sup></div>
+        <div><span id="currentTemp"></span>&deg;<sup>F</sup></div>
         <div><img id="currentSummary" alt="Weather Summary" src="/cit230/homework/weather/images/day.png"></div>
       </section>
       <section class="detail">
-        <div><span id="celsius"></span> &deg;C<br><span id="summaryDescription"></span></div>
+        <div id="highLow"><span id="celsius"></span> &deg;C<br><span id="summaryDescription"></span></div>
         <div><span id="windSpeed"></span> mph <span id="windDir"></span><br><span id="rainInch"></span>in Rain</div>
       </section>
       <div id="page-nav"></div>

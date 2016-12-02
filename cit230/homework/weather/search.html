@@ -1,43 +1,63 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
+<!-- *********************************************
+http://api.wunderground.com/api/64ffccdad5d42b2b/conditions/q/CA/San_Francisco.json
+API = 64ffccdad5d42b2b
+* Who Did You Collaborate With On This Assessment?
+* 1. Calvin Milliron
+* 2. Samantha Sullivan
+* 3. Brianne Groom
+* 4. Maksim Efoshkin
+* 5.
+* ******************************************** -->
     <meta charset="UTF-8">
-    <title>Franklin, ID Weather</title>
+    <title>Weather</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" media="screen" type="text/css" href="/cit230/homework/weather/styles/franklin.css">
   </head>
   <body>
-        <div id="searchLink"><a href="search.html">Search</a></div>
+    <header id="searchBox">
+      <div>
+          <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+        <input type="search" name="query" id="query">
+        <input type="submit" name="submit" value="Search" id="send">
+      </form>
+    </div>
+    <div><h1 id="currentCity"></h1></div>
+    </header>
+    
+    <section id="searchResults">
+    </section>
+
     <header id="page-header"></header>
     <main>
       <section class="summary">
-        <div>84&deg;<sup>F</sup></div>
-        <div><img alt="Weather Summary" src="/cit230/homework/weather/images/day.png"></div>
+        <div><span id="currentTemp"></span>&deg;<sup>F</sup></div>
+        <div><img id="currentSummary" alt="Weather Summary" src="/cit230/homework/weather/images/day.png"></div>
       </section>
       <section class="detail">
-        <div>High 90&deg;<br>Low 66&deg;</div>
-        <div>1 - 5 mph SW<br>0% Rain</div>
+        <div id="highLow"><span id="celsius"></span> &deg;C<br><span id="summaryDescription"></span></div>
+        <div><span id="windSpeed"></span> mph <span id="windDir"></span><br><span id="rainInch"></span>in Rain</div>
       </section>
       <div id="page-nav"></div>
       <section class="recommendation">
         <div>
           <h2>Clothing</h2>
-          <p>It could get at hot as 90&deg; so you try to wear light clothing today and stay hydrayted.</p>
+          <p id="clothingRecommend"></p>
         </div>
       </section>
       <section class="recommendation">
         <div>
           <h2>Travel</h2>
-          <p>It will be sunny today, so try to use a windsheild visor to prevent the inside of your car becoming too hot.</p>
+          <p id="travelRecommend"></p>
         </div>
       </section>
-      <section class="news">
+      <!--<section class="news">
         <h2>News</h2>
-        <p>The heat has caused a fatality due to heat exhaustion brought on by not drinking any water in this hot weather.</p>
-        <p>Stay safe around swimming pools. There have been 2 fatalities of children playing in pools unsupervised.</p>
-      </section>
-      <section class="hourly">
+        <p id="newsRecommend" ></p>
+      </section>-->
+      <!--<section class="hourly">
         <h2>Morning</h2>
         4am  - 69&deg;<br>
         5am  - 70&deg;<br>
@@ -69,10 +89,12 @@
         1am  - 67&deg;<br>
         2am  - 69&deg;<br>
         3am  - 69&deg;
-      </section>
+      </section>-->
     </main>
     <footer id="page-footer"></footer>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="/cit230/homework/weather/scripts/modules.js"></script>
+    <script src="/cit230/homework/weather/scripts/remote_wu.js"></script>
+    <script src="/cit230/homework/weather/scripts/search.js"></script>
   </body>
 </html>
