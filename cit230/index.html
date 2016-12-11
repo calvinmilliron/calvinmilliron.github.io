@@ -2,40 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home Page | calvinmilliron.github.io</title>
+    <title>Milliron Family</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <style>
-   
-    </style>
+    <link rel="stylesheet" media="screen" type="text/css" href="styles/main.css">
   </head>
-  <body>
-    <header>
-      <h1>calvinmilliron.github.io</h1>
-      <img alt="The site logo for calvinmilliron.github.io" src="#">
-    </header>
+  <body onload="modules()">
+    <header id="header"></header>
     <main>
-      <h1>Home Page</h1>
-      <h2>Homework</h2>
-      <ul>
-        <li><a href="homework/visitor-analysis.html" title="View Mobile Site Visitor Analysis">Mobile Site Visitor Analysis</a></li>
-        <li><a href="homework/design-principles.html" title="View Design Principles Assessment">Design Principles Assessment</a></li>
-        <li><a href="homework/initial-plan.html" title="View Initial Planning Document">Inital Planning Document</a></li>
-        <li><a href="homework/weather/franklin.html" title="View Franklin Weather">Franklin Weather</a></li>
-        <li><a href="homework/presentation.html" title="View CSS Implementation">CSS Implementation Presentation</a></li>
-        <li><a href="homework/responsive_media/index.html" title="View Responsive Media Assignment">Responsive Media Assignment</a></li>
-        <li><a href="homework/lesson4/index.htm" title="View Lesson 4">Lesson 4</a></li>
-        <li><a href="homework/jsonweather-html/index.html" title="View Current Location Assessment">Current Location Assessment Seed Page</a></li>
-        <li><a href="homework/weather/index.html" title="View Current Location Assessment">Current Location Assessment Weather Page</a></li>
-      </ul>
-      <h2>Classwork</h2>
-      <ul>
-        <li><a href="classwork/practice.html" title="Practice page with SUX image">Practice SUX</a></li>
-      </ul>
-      <p>This is a temporary home page served from a GitHub repository.</p>
+      <h3>The Milliron Family</h3>
+      <section id="family-photos">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/family-500px-1.jpg">
+          <img alt="Aurora 1" src="images/family-250px-1.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/family-500px-2.jpg">
+          <img alt="Aurora 2" src="images/family-250px-2.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/family-500px-3.jpg">
+          <img alt="Aurora 3" src="images/family-250px-3.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/family-500px-4.jpg">
+          <img alt="Aurora 1" src="images/family-250px-1.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/family-500px-5.jpg">
+          <img alt="Aurora 2" src="images/family-250px-2.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/family-500px-6.jpg">
+          <img alt="Aurora 3" src="images/family-250px-3.jpg">
+        </picture>
+      </section>
     </main>
-    <footer>
-      <small>Last Updateed: OCt 9, 2016</small>
-    </footer>
+    <p>Every year of their lives, the Milliron children have all attended the Arizona Renaissance Festival.</p><p>They have met faries and mermaids, Princes and Paupers. They have riden giant rocking horses and live elephants.</p><p>Click their faces above to learn more about each of them.</p>
+    <footer id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
   </body>
+
 </html>

@@ -1,24 +1,139 @@
-
-<style>
+header{
+  width: 100%;
+}
+header img{
+  width: 20%;
+}
+header img:hover{
+  filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.5));
+}
+#photos{
+  text-align: center;
+}
+#photos img{
+  width: 25%;
+  border-radius: 10px;
+  margin: 10px;
+}
+#family-photos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+caption{
+  text-align: center;
+}
+#family-photos picture{
+  width: 38%;
+  margin: 10px;
+}
+#family-photos picture img{
+  width: 100%;
+  border-radius: 50px;
+  
+}
+#likes img{
+  width: 12%;
+}
+main{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+main section{
+  width: 100%;
+}
+p{
+  text-indent: 1em;
+  font-size: 1.5em;
+  margin: 1em;
+}
+h4{
+  font-size: 2em;
+}
+li{
+  font-size: 1.5em;
+}
+li li{
+  font-size: .98em;
+}
 h1{
-  font-family: "Lucida Grande", sans-serif;
-  color: #c7505a;
+  font-size: 34vw;
+  font-weight: normal;
+  margin: 0;
 }
-.subHeading{
-  background-color: #a2ffd1;
-  border-radius: 5px;
-  width: 120px;
-  padding-left: 5px;
+#info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
-.subHeading:hover{
-  transition-duration: 500ms;
-  box-shadow: 5px 5px 5px #888888;
-  cursor: pointer;
+.shaded{
+  border-radius: 10px;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 5px;
+  font-size: 2em;
 }
-#description{
-  background-color: black;
-  color: #a2ffd1;
-  width: 420px;
-  padding-left: 3px;
+footer{
+  margin: 15px 0px;
 }
-</style>
+#name{
+  display: none;
+}
+h3{
+  font-size: 8vw;
+  margin: 0px;
+}
+
+
+
+
+@media screen and (min-width: 600px){
+  #left-side{
+    width: 50%;
+  }
+  #info{
+    width: 50%;
+  }
+  main{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1{
+    font-size: 16vw;
+  }
+}
+
+@media screen and (min-width: 800px){
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header img{
+    width: 100%;
+  }
+  #name{
+    display: flex;
+    font-size: 8vw;
+    width: 28%;
+  }
+  h1{
+    display: none;
+  }
+  #left-side{
+    width: 70%;
+  }
+  #info{
+    width: 70%;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+  }
+  #photos img{
+   width: 20%; 
+  }
+}

@@ -1,0 +1,51 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+body{
+    font: 20px "times new roman", times, serif;
+    margin: 0;
+    padding: 0;
+}
+/*
+@media screen and (min-width: 600px){
+  header{
+    text-align: center;
+    width: 100%;
+  }
+  nav{
+    float: left;
+    width: 30%;
+    padding: 1em;
+  }
+  main{
+    float: left;
+    width: 40%;
+    padding: 1em;
+    margin: 1em;
+  }
+  aside{
+    float: left;
+    width: 20%;
+    padding: 1em;
+  }
+  footer{
+    clear: left;
+  }
+}*/
+#wrapper{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  text-align: center;
+}
+#center{ display: flex; }
+nav{ width: 20%; }
+main{ width: 50%; }
+aside{ width: 30%; }

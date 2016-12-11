@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aurora | Milliron Family</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="screen" type="text/css" href="styles/main.css">
+  </head>
+  <body onload="init('aurora')">
+    <header id="header"></header>
+    <main>
+      <div id="left-side">
+      <h1>Aurora</h1>
+      <section><video></video></section>
+      </div>
+      <section id="info">
+        <span id="age" class="shaded"></span><span id="hair" class="shaded"></span><span id="grade" class="shaded"></span><span id="eyes" class="shaded"></span>
+      </section>
+      <section id="photos">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/aurora-300px-1.jpg">
+          <img alt="Aurora 1" src="images/aurora-150px-1.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/aurora-300px-2.jpg">
+          <img alt="Aurora 2" src="images/aurora-150px-2.jpg">
+        </picture>
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/aurora-300px-3.jpg">
+          <img alt="Aurora 3" src="images/aurora-150px-3.jpg">
+        </picture>
+      </section>
+      <h2 class="shaded">A Few of My Favorite Things</h2>
+      <section id="likes">
+        <img id="img-activity" alt="Activity" src="#"><img id="img-animal-cartoon" alt="Cartoon Animal" src="#"><img id="img-animal-real" alt="Real Animal" src="#"><img id="img-candy" alt="Candy" src="#"><img id="img-character" alt="Character" src="#"><img id="img-drink" alt="Drink" src="#"><img id="img-food" alt="Food" src="#"><img id="img-fruit" alt="Fruit" src="#">
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+ 
+</html>

@@ -1,0 +1,97 @@
+{
+  "aurora": {
+    "image": {
+      "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "age": "11 Years Old",
+    "hair": "Brunette",
+    "grade": "5th Grade",
+    "eyes": "Blue Eyes",
+    "color": "pink",
+    "animal": "elephant",
+    "food": "hamburger",
+    "candy": "almondjoy",
+    "fruit": "watermelon",
+    "activity": "theater",
+    "character": "rapunzel",
+    "drink": "rootbeer"
+  },
+  "ariel": {
+    "image": {
+      "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "age": "9 Years Old",
+    "hair": "Brunette",
+    "grade": "4th Grade",
+    "eyes": "Blue Eyes",
+    "color": "#a869bf",
+    "animal": "horse",
+    "food": "ramen",
+    "candy": "cotton",
+    "fruit": "kiwi",
+    "activity": "boardgame",
+    "character": "kiki",
+    "drink": "hotcocoa"
+  },
+  "ella": {
+    "image": {
+      "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "age": "7 Years Old",
+    "hair": "Brunette",
+    "grade": "2nd Grade",
+    "eyes": "Hazel Eyes",
+    "color": "#fff583",
+    "animal": "tiger",
+    "food": "corndog",
+    "candy": "chocolate",
+    "fruit": "apple",
+    "activity": "playground",
+    "character": "cinderella",
+    "drink": "chocolatemilk"
+  },
+  "triton": {
+    "image": {
+      "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "age": "5 Years Old",
+    "hair": "Brown Hair",
+    "grade": "Kindergarten",
+    "eyes": "Brown Eyes",
+    "color": "#646bc4",
+    "animal": "cheetah",
+    "food": "pizza",
+    "candy": "airheads",
+    "fruit": "orange",
+    "activity": "videogames",
+    "character": "spiderman",
+    "drink": "orangejuice"
+  },
+  "jasmine": {
+    "image": {
+      "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+      "title": "Weather Underground",
+      "link": "http://www.wunderground.com"
+    },
+    "age": "4 Years Old",
+    "hair": "Blonde",
+    "grade": "Pre School",
+    "eyes": "Blue Eyes",
+    "color": "#8ced75",
+    "animal": "owl",
+    "food": "sandwich",
+    "candy": "cookies",
+    "fruit": "banana",
+    "activity": "swimming",
+    "character": "sofia",
+    "drink": "water"
+  }
+}
