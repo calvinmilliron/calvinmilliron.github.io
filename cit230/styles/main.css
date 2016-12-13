@@ -63,6 +63,9 @@ h1{
   font-weight: normal;
   margin: 0;
 }
+#explanation{
+  width: 50%
+}
 #info{
   display: flex;
   flex-wrap: wrap;
