@@ -1,11 +1,5 @@
 <html>
 <body>
-<h1>W3Schools Internal Note</h1>
-<div>
-<b>To:</b> <span id="to"></span><br />
-<b>From:</b> <span id="from"></span><br />
-<b>Message:</b> <span id="message"></span>
-</div>
 
 <script language="JavaScript">
   // Create a connection to the file.
@@ -15,36 +9,45 @@
   Connect.open("GET", "pc.xml", false);
   Connect.setRequestHeader("Content-Type", "text/xml");
   Connect.send(null);
+  
   // Place the response in an XML document.
   var TheDocument = Connect.responseXML;
+  
   // Place the root node in an element.
   var Customers = TheDocument.childNodes[0];
-  // Retrieve each customer in turn.
+  
   document.write("<table>");
+  // Retrieve each customer in turn.
   for (var i = 0; i < Customers.children.length; i++)
   {
-   var Customer = Customers.children[i];
-   // Access each of the data values.
+    var Customer = Customers.children[i];
+    // Access each of the data values.
+    var NameText = "";
     if (Customer.getElementsByTagName("GameTitle")) {
-    var Name = Customer.getElementsByTagName("GameTitle");
-      var NameText = Name[0].textContent.toString();
-    } else { var NameText = ""; }
+      var Name = Customer.getElementsByTagName("GameTitle");
+      NameText = Name[0].textContent.toString();
+    }
+    
+    var AgeText = "";
     if (Customer.getElementsByTagName("ReleaseDate")) {
-    var Age = Customer.getElementsByTagName("ReleaseDate");
-      var AgeText = Age[0].textContent.toString();
-    } else { var AgeText = ""; }
+      var Age = Customer.getElementsByTagName("ReleaseDate");
+      AgeText = Age[0].textContent.toString();
+    }
+    
+    var ColorText = "";
     if (Customer.getElementsByTagName("id")) {
-   var Color = Customer.getElementsByTagName("id");
-      var ColorText = Color[0].textContent.toString();
-    } else { var ColorText = ""; }
-   // Write the data to the page.
-   document.write("<tr><td>");
+      var Color = Customer.getElementsByTagName("id");
+      ColorText = Color[0].textContent.toString();
+    }
+    
+    // Write the data to the page.
+    document.write("<tr><td>");
     document.write(NameText);
-   document.write("</td><td>");
+    document.write("</td><td>");
     document.write(AgeText);
-   document.write("</td><td>");
+    document.write("</td><td>");
     document.write(ColorText);
-   document.write("</td></tr>");
+    document.write("</td></tr>");
   }
   document.write("</table>");
 </script>
