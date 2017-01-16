@@ -25,10 +25,15 @@
   {
    var Customer = Customers.children[i];
    // Access each of the data values.
+    if (Customer.getElementsByTagName("GameTitle")) {
     var Name = Customer.getElementsByTagName("GameTitle");
+    } else { var Name = ""; }
+    if (Customer.getElementsByTagName("ReleaseDate")) {
     var Age = Customer.getElementsByTagName("ReleaseDate");
-   var Color = Customer.getElementsByTagName(
-     "id");
+    } else { var Age = ""; }
+    if (var Color = Customer.getElementsByTagName("id")) {
+   var Color = Customer.getElementsByTagName("id");
+    } else { var Color = ""; }
    // Write the data to the page.
    document.write("<tr><td>");
    document.write(Name[0].textContent.toString());
