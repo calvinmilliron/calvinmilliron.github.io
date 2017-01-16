@@ -27,20 +27,23 @@
    // Access each of the data values.
     if (Customer.getElementsByTagName("GameTitle")) {
     var Name = Customer.getElementsByTagName("GameTitle");
-    } else { var Name = ""; }
+      var NameText = Name[0].textContent.toString();
+    } else { var NameText = ""; }
     if (Customer.getElementsByTagName("ReleaseDate")) {
     var Age = Customer.getElementsByTagName("ReleaseDate");
-    } else { var Age = ""; console.log("NOPE"); }
+      var AgeText = Age[0].textContent.toString();
+    } else { var AgeText = ""; }
     if (Customer.getElementsByTagName("id")) {
    var Color = Customer.getElementsByTagName("id");
-    } else { var Color = ""; }
+      var ColorText = Color[0].textContent.toString();
+    } else { var ColorText = ""; }
    // Write the data to the page.
    document.write("<tr><td>");
-   document.write(Name[0].textContent.toString());
+    document.write(NameText);
    document.write("</td><td>");
-   document.write(Age[0].textContent.toString());
+    document.write(AgeText);
    document.write("</td><td>");
-   document.write(Color[0].textContent.toString());
+    document.write(ColorText);
    document.write("</td></tr>");
   }
   document.write("</table>");
