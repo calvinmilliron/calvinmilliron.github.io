@@ -31,8 +31,9 @@
     var AgeText = "";
     if (Customer.getElementsByTagName("ReleaseDate")) {
       var Age = Customer.getElementsByTagName("ReleaseDate");
-      
-      AgeText = Age[0].textContent.toString();
+      if (Age[0]) {
+        AgeText = Age[0].textContent.toString();
+      }
     }
     
     var ColorText = "";
