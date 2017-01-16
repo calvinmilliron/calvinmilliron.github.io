@@ -20,23 +20,25 @@
   // Place the root node in an element.
   var Customers = TheDocument.childNodes[0];
   // Retrieve each customer in turn.
+  document.write("<table>");
   for (var i = 0; i < Customers.children.length; i++)
   {
    var Customer = Customers.children[i];
    // Access each of the data values.
-   var Name = Customer.getElementsByTagName("id");
-   var Age = Customer.getElementsByTagName("GameTitle");
+    var Name = Customer.getElementsByTagName("GameTitle");
+    var Age = Customer.getElementsByTagName("ReleaseDate");
    var Color = Customer.getElementsByTagName(
-     "ReleaseDate");
+     "id");
    // Write the data to the page.
    document.write("<tr><td>");
-   document.write(Name.value);
+   document.write(Name[0].textContent.toString());
    document.write("</td><td>");
-   document.write(Age.value);
+   document.write(Age[0].textContent.toString());
    document.write("</td><td>");
-   document.write(Color.value);
+   document.write(Color[0].textContent.toString());
    document.write("</td></tr>");
   }
+  document.write("</table>");
 </script>
 
 </body>
