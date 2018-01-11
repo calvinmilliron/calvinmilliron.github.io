@@ -17,7 +17,7 @@ html{ margin: 0; }
   border-color: #000000;
   border-width: thick;
   border-style: solid;
-  background-image: url(/images/owl.jpg);
+  background-image: url(images/owl.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -37,7 +37,7 @@ html{ margin: 0; }
 }
 #discardPile{
   background-color: #222222;
-  background-image: url(/images/start.png);
+  background-image: url(images/start.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
