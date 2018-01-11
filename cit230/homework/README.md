@@ -1,2 +1,3 @@
 # calvinmilliron.github.io
-This site is for posting homework assignments for a web frontend development class.
+This directory is for posting homework assignments for Brother Robertson's CIT 230 Web Frontend Development class.
+Rendered content can be viewed at <a href="https://calvinmilliron.github.io/cit230/homework">https://calvinmilliron.github.io/cit230/homework</a>.
