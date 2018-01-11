@@ -8,13 +8,13 @@ function startGame() {
   disCard.onclick = null;
   disCard.style.backgroundColor = "#222222";
   disCard.innerHTML = "";
-  disCard.style.backgroundImage = "url('images/start.gif')";
+  disCard.style.backgroundImage = "url('../images/start.gif')";
   
   var thisCard;
   for(var player = 1; player <= 2; player++){
     for(var card = 1; card <= 7; card++){
       thisCard = document.getElementById("p"+player+"Card"+card);
-      thisCard.style.backgroundImage = "url(images/owl.jpg)";
+      thisCard.style.backgroundImage = "url(../images/owl.jpg)";
       thisCard.innerHTML = "";
       thisCard.style.display = "flex"; 
     }
