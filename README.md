@@ -7,4 +7,4 @@ Content is limited to:
   <li>CSS3</li>
   <li>JavaScript</li>
 </ul>
-Rendered content can be viewed at <a href="https://calvinmilliron.github.io">https://calvinmilliron.github.io</a>
+Rendered content can be viewed at <a href="https://calvinmilliron.github.io" target="_blank">https://calvinmilliron.github.io</a>
