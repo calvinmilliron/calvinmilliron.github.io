@@ -1,0 +1,108 @@
+img{ border: 0; }
+html{ margin: 0; }
+.hand{
+  display: flex;
+  justify-content: center;
+}
+.fc{
+	font-family: sans-serif;
+}
+.card{
+  width: 100px;
+  height: 180px;
+  margin: 6px 4px;
+  border-radius: .2em;
+  font-size: 500%;
+  cursor: default;
+  border-color: #000000;
+  border-width: thick;
+  border-style: solid;
+  background-image: url(/images/owl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+.card span{
+  border-radius: .1em;
+  background-color: rgba(255, 255, 255, 0.44);
+}
+#page-center{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+#discardPile{
+  background-color: #222222;
+  background-image: url(/images/start.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  cursor: pointer;
+  
+}
+.hand{
+  border-radius: 1em; 
+  transition: all .5s ease-in-out;
+	display:flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	padding: 5px, 45px;
+	
+}
+.player{
+  display: flex;
+  justify-content: space-between;
+  font-size: 200%;
+  margin: 20px 0px;
+  
+}
+.player div{
+  width: 33%;
+}
+.name{
+  text-align: center;
+}
+.reset{ 
+	text-align: right;
+}
+#p1ResetImg, #p2ResetImg{ 
+  opacity: 0; 
+  transition: all .5s ease-in-out; 
+}
+#resetPop{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  font-size: 200%;
+  
+}
+#resetPop div{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;;
+  text-align: center;
+}
+#resetPop button{
+  border-radius: 10px;
+  font-size: 100%;
+  width: 100px;
+  margin: 10px 0;
+  background: linear-gradient(#666, #999);
+  cursor: pointer;
+  
+}
+#resetPop button:hover{
+  background: linear-gradient(#999, #666);
+}
+#resetPop button:active{
+  
+}

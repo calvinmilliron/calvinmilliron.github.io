@@ -1,0 +1,2 @@
+# calvinmilliron.github.io
+This directory is dedicated to the first project accomplished for Brother Barney's CIT 160 Introduction to Programming class meant to present basic information about certain animals in an interactive way.

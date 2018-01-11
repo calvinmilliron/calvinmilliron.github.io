@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Practice File</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles/main.css">
+    <!--<link rel="text/javascript" href="scripts/main.js">-->
+    <script src="scripts/main.js"></script>
+
+  </head>
+
+  <body onLoad="init()">
+    <main>
+      <section id="user-stocks">
+        <section id="personal-info">
+          <!--<h2>Name: </h2>-->
+          <h2>Bank/$$: </h2>
+        </section>
+        <section id="stock-1" class="stocks-owned">
+          <div class="company"><h3>SAM</h3></div>
+          <div class="number"><h3># of Stocks</h3></div>
+          <div class="cumulative"><h3>Profit/Loss</h3></div>
+          <div class="sell"><h3>Sell</h3></div>
+        </section>
+        <section id="stock-2" class="stocks-owned">
+          <div class="company"><h3>SHA</h3></div>
+          <div class="number"><h3># of Stocks</h3></div>
+          <div class="cumulative"><h3>Profit/Loss</h3></div>
+          <div class="sell"><h3>Sell</h3></div>
+        </section>
+        <section id="stock-3" class="stocks-owned">
+          <div class="company"><h3>CAL</h3></div>
+          <div class="number"><h3># of Stocks</h3></div>
+          <div class="cumulative"><h3>Profit/Loss</h3></div>
+          <div class="sell"><h3>Sell</h3></div>
+        </section>
+      </section>
+
+      <section id="stock-options">
+        <section id="graph" width="100%">
+          <canvas id="canvas" ></canvas>
+        </section>
+        <section id="options-buy">
+          <table>
+            <tr>
+              <td>SAM</td>
+              <td>Current $<span id="samCurrent"></span></td>
+              <td id="samDifference"></td>
+              <td>Buy</td>
+            </tr>
+            <tr>
+              <td>SHA</td>
+              <td>Currrent $<span id="shaCurrent"></span></td>
+              <td id="p1ResetImg"></td>
+              <td>Buy</td>
+            </tr>
+            <tr>
+              <td>CAL</td>
+              <td>Current $<span id="calCurrent"></span></td>
+              <td id="demo"></td>
+              <td>Buy</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+    </main>
+    <footer>
+    </footer>
+  </body>
+
+</html>

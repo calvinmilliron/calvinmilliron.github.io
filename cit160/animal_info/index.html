@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Animals | CIT 160</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="screen" type="text/css" href="styles/main.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <link rel='icon' href='/images/tiger-fav-icon.ico' type='image/x-icon'/>
+  </head>
+  <body>
+    <header>
+      <h1>Animals Galore</h1>
+      <nav class="animals">
+        <img class="animal" id="lynx" onclick="selectAnimal(this)" alt="Select Lion" src="images/lynx.png">
+        <img class="animal" id="tiger" onclick="selectAnimal(this)" alt="Select Tiger" src="images/tiger.png">
+        <img class="animal" id="polarBear" onclick="selectAnimal(this)" alt="Select Polar Bear" src="images/polar-bear.png">
+        <img class="animal" id="cheetah" onclick="selectAnimal(this)" alt="Select Cheetah" src="images/cheetah.png">
+        <img class="animal" id="grayWolf" onclick="selectAnimal(this)" alt="Select Gray Wolf" src="images/gray-wolf.png">
+        <img class="animal" id="panda" onclick="selectAnimal(this)" alt="Select Panda" src="images/panda.png">
+      </nav>
+    </header>
+    <main>
+      <section class="animalInfo" id="lynxInfo">
+        <h2>Lynx</h2>
+        <p>"Eldest Nephew of the jungle"</p>
+        <div class="animal-flex">
+          <img class="lynxpic" src="/animal_pics/lynx-fur-coat.jpg" alt="Lynx Fur Coat">
+		  		<img class="lynxpic" src="/animal_pics/lynx-family.jpg" alt="Lynx Family">
+		  		<img class="lynxpic" src="/animal_pics/lynx-snow.jpg" alt="Lynx Snow">
+		  		<img class="lynxpic" src="/animal_pics/lynx-family-2.jpg" alt="Lynx Family 2">
+        </div>
+        <h4>Scientific Name:</h4>
+        <p class="indent">'Felinae Lynx'</p>
+        <h4>Fun Fact:</h4>
+        <p class="indent">National Animal of Romania and the Republic of Macedonia</p>
+        <img class="habitat" src="/images/boreal-forest.jpg" alt="Boreal Forest">
+        <h4>Average Weight:</h4>
+        <p class="indent">18 kg. or 40 lbs.</p>
+        <h4>Average Size:</h4>
+        <p class="indent">95 cm. or 37 in.</p>
+        <img class="habitat" src="/images/deer.jpg" alt="Deer">
+        <h4>Natural Habitat:</h4>
+        <p class="indent">Boreal forests in Canada and Alaska</p>
+        <h4>Diet:</h4>
+        <p class="indent">Deer, hares, smaller mammals, birds, and sheep</p>
+      </section>
+      <section class="animalInfo" id="tigerInfo">
+        <h2>Tiger</h2>
+        <p>"Next in line to be King of the jungle"<br>
+				<div class="animal-flex">
+					<img class="tigerpic" src="/animal_pics/tiger-lay.jpg" alt="Tiger Lounging">
+					<img class="tigerpic" src="/animal_pics/tiger-cubs.jpg" alt="Tiger Cubs">
+					<img class="tigerpic" src="/animal_pics/tiger-hunting.jpg" alt="Tiger Hunting">
+		  		<img class="tigerpic" src="/animal_pics/tiger-lick.jpg" alt="Tiger Love">
+				</div>
+        	<h4>Scientific Name:</h4>
+        		<p class="indent">'Panthera Tigris'</p>
+        	<h4>Fun Fact:</h4>
+        		<p class="indent">Largest Big Cat in the world</p>
+        	<img class="habitat" src="/images/open-grassland.jpeg" alt="Open Grassland">
+        	<h4>Average Weight:</h4>
+        		<p class="indent">225 kg. or 496 lbs.</p>
+        	<h4>Average Size:</h4>
+        		<p class="indent">Male: 8.2 - 13 ft.</p>
+        		<p class="indent">Female: 6.6 - 9 ft.</p>
+        	<img class="habitat" src="/images/deer.jpg" alt="Deer">
+        	<h4>Natural Habitat:</h4>
+        		<p class="indent">Siberian Taiga, open grasslands, topical swamps</p>
+        	<h4>Diet:</h4>
+        		<p class="indent">Mammals like deer, wild boar, and small flightless birds</p>
+      </section>
+      <section class="animalInfo" id="polarBearInfo">
+        <h2>Polar Bear</h2>
+        <p>"Uncle-that-moved-away-to-Alaska of the jungle"</p>
+				<div class="animal-flex">
+		  		<img class="polarpic" src="/animal_pics/polar-bear-pose.jpg" alt="Polar Bear Pose">
+		  		<img class="polarpic" src="/animal_pics/polar-bear-family.jpg" alt="Polar Bear Family">
+		  		<img class="polarpic" src="/animal_pics/polar-bear-hunting.jpg" alt="Polar Bear Hunting">
+		  		<img class="polarpic" src="/animal_pics/polar-bear-swimming.jpg" alt="Polar Bear Swimming">
+				</div>
+					<h4>Scientific Name:</h4>
+						<p class="indent"><i>'Ursus maritimus'</i></p>
+					<h4>Fun Fact:</h4>
+						<p class="indent">The largest Polar Bear ever recorded weighed over 2,000 poundsor 1 ton and stood 11 feet tall</p>
+        	<img class="habitat" src="/images/arctic-circle.jpg" alt="Artic Circle">
+      		<h4>Average Weight:</h4>
+      			<p class="indent">350 – 700 kg or 772 – 1,543 lbs.</p>
+      		<h4>Average Size:</h4>
+      			<p class="indent">1.8–2.4 meters or 5 ft. 11 in. – 7 ft. 10 in.</p>
+      		<img class="habitat" src="/images/seal.jpg" alt="Seal">
+      		<h4>Natural Habitat:</h4>
+      			<p class="indent">Artic circle</p>
+      		<h4>Diet:</h4>
+						<p class="indent">Seals</p>
+      </section>
+      <section class="animalInfo" id="cheetahInfo">
+        <h2>Cheetah</h2>
+        <p>"Athletic Sister of the jungle"</p>
+				<div class="animal-flex">
+		  		<img class="cheetahpic" src="/animal_pics/cheetah-pose.jpg" alt="Cheetah Pose">
+		  		<img class="cheetahpic" src="/animal_pics/cheetah-running.jpg" alt="Cheetah Running">
+		  		<img class="cheetahpic" src="/animal_pics/cheetah-cubs.jpg" alt="Cheetah Cubs">
+		  		<img class="cheetahpic" src="/animal_pics/cheetah-hunting.jpg" alt="Cheetah Hunting">
+					</div>
+        		<h4>Scientific Name:</h4>
+        			<p class="indent"><i>'Acinonyx Jubatus'</i></p>
+        		<h4>Fun Fact:</h4>
+        			<p class="indent">Can run at top speed of 70 mph.</p>
+        		<img class="habitat" src="/images/dry-forest.jpg" alt="Dry Forest">
+        		<h4>Average Weight:</h4>
+        			<p class="indent">46 kg. or 100 lbs.</p>
+        		<h4>Average Size:</h4>
+        			<p class="indent">80 cm. or 32 in.</p>
+        		<img class="habitat" src="/images/gazelle.jpg" alt="Gazelle">
+        		<h4>Natural Habitat:</h4>
+        			<p class="indent">Dry forests, scrub forests, and savannahs</p>
+        		<h4>Diet:</h4>
+        			<p class="indent">Antelope, Gazelle, and other medium mammals</p>
+      </section>
+      <section class="animalInfo" id="grayWolfInfo">
+        <h2>Gray Wolf</h2>
+        <p>"Distant-Cousin-from-Mother's-side of the jungle"</p>
+				<div class="animal-flex">
+		  		<img class="wolfpic" src="/animal_pics/wolf-pose.jpg" alt="Wolf Pose">
+		  		<img class="wolfpic" src="/animal_pics/wolf-running.jpg" alt="Wolf Running">
+		  		<img class="wolfpic" src="/animal_pics/wolf-cubs.jpg" alt="Wolf Cubs">
+		  		<img class="wolfpic" src="/animal_pics/wolf-happy.jpg" alt="Wolf Frolicking">
+				</div>
+        	<h4>Scientific Name:</h4>
+        		<p class="indent">'Canis Lupus'</p>
+        	<h4>Fun Fact:</h4>
+        		<p class="indent">Wolves hunt in packs and the hunting process has five distinct stages: 1. Locating Prey, 2. The Stalk, 3. The encounter, 4. The rush, 5. The Chase</p>
+        	<img class="habitat" src="/images/boreal-forest.jpg" alt="Boreal Forest">
+        	<h4>Average Weight:</h4>
+        		<p class="indent">40 kg. or 88lbs.</p>
+        	<h4>Average Size:</h4>
+        		<p class="indent">130 cm. or 51 in.</p>
+        	<img class="habitat" src="/images/wild-boar.jpg" alt="Wild Boar">
+        	<h4>Natural Habitat:</h4>
+        		<p class="indent">Canada, Alaska, Northern USA, Europe, Asia in mountainous areas, colder climates, or deserts, forests, grasslands, and arctic tundra</p>
+        	<h4>Diet:</h4>
+        		<p class="indent">Moose, elk, deer, birds, and wild boar</p>
+      </section>
+      <section class="animalInfo" id="pandaInfo">
+        <h2>Panda</h2>
+        <p>"Really lazy Uncle of the jungle"</p>
+				<div class="animal-flex">
+		  		<img class="pandapic" src="/animal_pics/panda-pose.JPG" alt="Panda Pose">
+		  		<img class="pandapic" src="/animal_pics/panda-plants.jpg" alt="Panda Plants">
+		  		<img class="pandapic" src="/animal_pics/panda-eating.jpg" alt="Panda Eating">
+		  		<img class="pandapic" src="/animal_pics/panda-suprise.jpg" alt="Panda Surprise">
+				</div>
+        	<h4>Scientific Name:</h4>
+        		<p class="indent"><i>'Ailuropoda melanoleuca'</i></p>
+        	<h4>Fun Fact:</h4>
+        		<p class="indent">Pandas do not hibernate and have been known to attack humans out of irritation</p>
+        	<img class="habitat" src="/images/chinese-mountain.jpg" alt="Chinese Mountain">
+        	<h4>Average Weight:</h4>
+        		<p class="indent">110 kg. or 240 lbs. </p>
+        	<h4>Average Size:</h4>
+        		<p class="indent">1.2 to 1.9 m or 4 to 6 ft.</p>
+        	<img class="habitat" src="/images/bamboo.jpg" alt="Bamboo">
+        	<h4>Natural Habitat:</h4>
+        		<p class="indent">Chinese mountain ranges</p>
+        	<h4>Diet:</h4>
+        		<p class="indent">Bamboo</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+body{
+  border: 0;
+  font-family: 'Indie Flower', 'Arial', sans-serif;
+  background-image: url("/images/jungle-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.animals img{
+  transition: all .4s ease-in-out;
+  width: 49%;
+  cursor: pointer;
+}
+.animals img:hover{
+  transform: scale(1.2);
+}
+h1, nav{
+  text-align: center;
+  color: #222a23;
+    background-color: rgba(255, 255, 255, 0.49);
+    border-radius: 10px;
+}
+.animalInfo{
+  display: none;
+    background-color: rgba(255, 255, 255, 0.49);
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.indent {
+    text-indent: 2em;
+}
+
+.lynxpic, .tigerpic, .polarpic, .cheetahpic, .wolfpic, .pandapic {
+  height: 200px;
+}
+
+.animal-flex {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.polarpic {
+  height: 175px;
+}
+.habitat{
+  float: right;
+  height: 230px;
+}
+
+@media (min-width:300px){
+  body{
+    font-size: 120%;
+  }
+  .animals img{
+    width: 32%;
+  }  
+}
+@media (min-width:500px){
+  body{
+    font-size: 150%;
+  }
+  .animals img{
+    width: 15%;
+  }
+}

@@ -1,0 +1,2 @@
+# calvinmilliron.github.io
+This directory is dedicated to the second project accomplished for Brother Barney's CIT 160 Introduction to Programming class meant to provide a functional UNO card game with JavaScript.

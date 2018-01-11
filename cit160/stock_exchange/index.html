@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stocks | CIT 160</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+
+
+</head>
+
+<body onLoad="init()">
+  <div id="buyPop">
+    <div><span id="buyMessage"></span>
+      <input id="buyShares" type="number"><br>
+      <span id="confirmButton"></span>
+      <button onclick="buyDeny()">Cancel</button>
+    </div>
+  </div>
+  <div id="sellPop">
+  <div><span id="sellMessage"></span>
+    <span id="sellSelect"></span><br>
+    <span id="confirmSellButton"></span>
+    <button onclick="sellDeny()">Cancel</button>
+  </div>
+  </div>
+  <header>
+    <div id="confirmMessage">&nbsp;</div><div>You have <span id="timeDisplay">60</span> seconds left!</div>
+  </header>
+  <main>
+    <section id="user-stocks">
+      <section id="personal-info">
+      <!--<h2>Name: </h2>-->
+      <h2>You Have $<span id="bank">1000</span> left</h2>
+      </section>
+
+      <table>
+        <tr>
+          <th>&nbsp;</th>
+          <th>Shares</th>
+          <th>Profit</th>
+          <th>&nbsp;</th>
+        </tr>
+        <tr class="highlight">
+          <td class="SAMcompany">SAM</td>
+          <td id="SAMshares">0</td>
+          <td id="SAMprofit">0</td>
+          <td><button onclick="sellStock('SAM')">Sell</button></td>
+        </tr>
+        <tr>
+          <td class="SHAcompany">SHA</td>
+          <td id="SHAshares">0</td>
+          <td id="SHAprofit">0</td>
+          <td><button onclick="sellStock('SHA')">Sell</button></td>
+        </tr>
+        <tr class="highlight">
+          <td class="CALcompany">CAL</td>
+          <td id="CALshares">0</td>
+          <td id="CALprofit">0</td>
+          <td><button onclick="sellStock('CAL')">Sell</button></td>
+        </tr>
+      </table>
+
+      <button onclick="giveAdvice()">Get Stock Advice</button>
+      <div id="adviceMessage"></div>
+    </section>
+
+    <section>
+      <table id="stock-options">
+        <tr>
+          <th class="SAMcompany">SAM</th>
+          <th><button onclick="buyStock('SAM')">Buy</button></th>
+          <th class="SHAcompany">SHA</th>
+          <th><button onclick="buyStock('SHA')">Buy</button></th>
+          <th class="CALcompany">CAL</th>
+          <th><button onclick="buyStock('CAL')">Buy</button></th>
+        </tr>
+        </table>
+    </section>
+  </main>
+  <footer>
+    <div id="chart_div"></div>
+  </footer>
+</body>
+
+</html>

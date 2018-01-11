@@ -1,0 +1,2 @@
+# calvinmilliron.github.io
+This directory is dedicated to the third project accomplished for Brother Barney's CIT 160 Introduction to Programming class meant to simulate a stock exchange that changes with time and can be interacted with.

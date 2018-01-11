@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Uno | CIT 160</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" media="screen" type="text/css" href="styles/main.css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <!--<link rel='icon' href='/images/tiger-fav-icon.ico' type='image/x-icon'/>-->
+  </head>
+  <body>
+    <div id="resetPop">
+      <div><span id="resetMessage">Are you sure you wanna reset?</span><br>
+        <button onclick="startGame()">Yes</button>
+        <button onclick="closeConfirm()">No</button>
+      </div>
+    </div>
+    <div class="player">
+      <div id="p1Score">Score</div>
+      <div id="p1Name" class="name">Player 1</div>
+      <div id="p1Reset" class="reset"><img id="p1ResetImg" src="/images/start.png" onclick="confirm(1)"></div>
+    </div>
+    <div class="hand" id="p1Hand">
+      <div class="card" id="p1Card1"></div>
+      <div class="card" id="p1Card2"></div>
+      <div class="card" id="p1Card3"></div>
+      <div class="card" id="p1Card4"></div>
+      <div class="card" id="p1Card5"></div>
+      <div class="card" id="p1Card6"></div>
+      <div class="card" id="p1Card7"></div>
+    </div>
+    <div id="page-center">
+      <div class="card" id="drawPile"></div>
+      <div class="card" id="discardPile" onclick="startGame()"></div>
+    </div>
+    <div class="hand" id="p2Hand">
+      <div class="card" id="p2Card1"></div>
+      <div class="card" id="p2Card2"></div>
+      <div class="card" id="p2Card3"></div>
+      <div class="card" id="p2Card4"></div>
+      <div class="card" id="p2Card5"></div>
+      <div class="card" id="p2Card6"></div>
+      <div class="card" id="p2Card7"></div>
+    </div>
+    <div class="player">
+      <div id="p2Score">Score</div>
+      <div id="p2Name" class="name">Player 2</div>
+      <div id="p2Reset" class="reset"><img id="p2ResetImg" src="/images/start.png" onclick="confirm(2)"></div>
+    </div>
+  </body>
