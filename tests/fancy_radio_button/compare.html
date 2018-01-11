@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page | calvinmilliron.github.io</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+
+    <script>
+      function confirm1Clicked(thisButton, qNumber) {
+        thisButton.style.backgroundColor = '#42ce5d'
+        document.getElementById("deny" + qNumber).style.backgroundColor = "transparent"
+        document.getElementById("deny" + qNumber).className = "deny" + qNumber
+
+      }
+      function deny1Clicked(thisButton, qNumber) {
+        thisButton.style.backgroundColor = '#ff3838'
+        document.getElementById("confirm" + qNumber).className = "confirm" + qNumber
+      }
+      function confirm2Clicked(thisButton, qNumber) {
+        thisButton.style.backgroundColor = '#42ce5d'
+        document.getElementById("deny" + qNumber).className = "deny" + qNumber
+      }
+      function deny2Clicked(thisButton, qNumber) {
+        thisButton.style.backgroundColor = '#ff3838'
+        document.getElementById("confirm" + qNumber).className = "confirm" + qNumber
+      }
+      function confirm3Clicked(thisButton, qNumber) {
+        thisButton.style.backgroundColor = '#42ce5d'
+        document.getElementById("deny" + qNumber).className = "deny" + qNumber
+      }
+      function deny3Clicked(thisButton, qNumber) {
+        thisButton.style.backgroundColor = '#ff3838'
+        document.getElementById("confirm" + qNumber).className = "confirm" + qNumber
+      }
+    </script>
+
+    <style>
+      button:focus { outline:0 !important; }
+      .confirm1{
+        border-color: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        transition-duration: 0.4s;
+
+      }
+      .confirm1:hover {
+        background-color:#4ce699;
+      }
+      .confirm1:active {
+        background-color: #276c4a;
+      }
+
+      .deny1{
+        border-color: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        transition-duration: 0.4s;
+      }
+      .deny1:hover {
+        background-color: #ffa8a8
+      }
+      .deny1:active {
+        background-color: #ff3838;
+      }
+
+      .confirm2{
+        border-color: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        transition-duration: 0.4s;
+      }
+      .confirm2:hover {
+        background-color:#4ce699;
+      }
+      .confirm2:active {
+        background-color: #276c4a;
+      }
+
+      .deny2{
+        border-color: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        transition-duration: 0.4s;
+      }
+      .deny2:hover {
+        background-color:#ffa8a8;
+      }
+      .deny2:active {
+        background-color: #276c4a;
+      }
+
+      .confirm3{
+        border-color: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        transition-duration: 0.4s;
+      }
+      .confirm3:hover {
+        background-color:#4ce699;
+      }
+      .confirm3:active {
+        background-color: #276c4a;
+      }
+
+      .deny3{
+        border-color: transparent;
+        border-radius: 5px;
+        background-color: transparent;
+        transition-duration: 0.4s;
+      }
+      .deny3:hover {
+        background-color:#ffa8a8;
+      }
+      .deny3:active {
+        background-color: #276c4a;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>calvinmilliron.github.io</h1>
+    </header>
+    <main>
+      <h1>Questions</h1>
+      <section>Are you worthy? <button id="confirm1" class="confirm1" onclick="confirm1Clicked(this, 1)">Yes</button><button id="deny1" class="deny1" onclick="deny1Clicked(this, 1)">No</button></section>
+      <section>Are you worthy? <button id="confirm2" class="confirm2" onclick="confirm2Clicked(this, 2)">Yes</button><button id="deny2" class="deny2" onclick="deny2Clicked(this, 2)">No</button></section>
+      <section>Are you worthy? <button id="confirm3" class="confirm3" onclick="confirm3Clicked(this, 3)">Yes</button><button id="deny3" class="deny3" onclick="deny3Clicked(this, 3)">No</button></section>
+    </main>
+    <footer>
+      <small>Last Updateed: Sept 19, 2016</small>
+    </footer>
+  </body>
+</html>

@@ -1,2 +1,2 @@
 # calvinmilliron.github.io
-This is a project for learning HTML5, CSS3, and JavaScript for Introduction to Programming.
+This test is for a way to use CSS3 to animate a stylized binary radio button.
